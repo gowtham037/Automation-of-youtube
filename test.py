@@ -5,7 +5,7 @@ from time import sleep
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 def main():
     try:
@@ -45,5 +45,5 @@ def main():
             driver.quit()
         logger.info("✅ Test completed")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
